@@ -1,11 +1,14 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+import React from 'react'
+import {Routes, Route } from 'react-router-dom' 
+import Layout from './components/Layout'
+import Navbar from './components/Navbar'
 
-function App() {
-    return (
-        <div>
-          <Navbar />
-        </div>
-    );
+const App = () => {
+  return (
+    <Routes>
+        <Route path='layout' element={<Layout />}/>
+        <Route path='navbar' element={<Navbar/>}/>
+    </Routes>
+  )
 }
 export default App;
