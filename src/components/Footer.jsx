@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div>
-        <img src="./logoxozm.png" alt=""  width="200px"/>
-       
+    <div className='footer'>
+        
+        <img src="./logoxozm.png" alt=""  width="100px"/>
+       <input type="text" className='footer__search'/>
         
     </div>
   )
