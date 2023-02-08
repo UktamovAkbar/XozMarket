@@ -7,7 +7,6 @@ const App = () => {
   return (
     <Routes>
         <Route path='layout' element={<Layout />}/>
-        <Route path='navbar' element={<Navbar/>}/>
     </Routes>
   )
 }
