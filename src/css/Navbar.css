@@ -40,15 +40,22 @@
 }
 
 .navbar__link1 {
+    position: relative;
     text-decoration: none;
     color: white;
     font-size: 8px;
     margin-left: 8px;
     font-size: 8px;
+    width: 20px;
 }
 
 .navbar__link1:hover {
     color: #FFBF00;
+}
+
+p{
+    position: absolute;
+    margin-left: -13px;
 }
 
 .navbar__link2 {
@@ -83,7 +90,27 @@
 }
 
 .nav__h2 {
-    padding: 19px 350px;
+    position: absolute;
+    margin: 350px;
+    margin-top: 24px;
     font-size: 12px;
     color: white;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+
+.nav__h2:hover {
+    color: #FFBF00;
+    
+}
+
+.nav__link1_p {
+    margin: 3px -22px;
+    font-size: 15px;
+}
+
+.nav__link1_p2 {
+    margin: 0px 1px;
+    font-size: 10px;
 }

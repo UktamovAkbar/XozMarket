@@ -16,17 +16,14 @@ const Navbar = () => {
         </select>
         <a className='navbar__a' href="tel: 8 (4912) 505-777"> 8 (4912) 505-777</a>
         <div className="navbar__link">           
-          <Link className='navbar__link1' to='/'> <FontAwesomeIcon icon={faStar} /></Link>
-          <Link className='navbar__link1' to='/'>Избранное </Link>
+          <Link className='navbar__link1' to='/'> <p><FontAwesomeIcon icon={faStar} /></p> Избранное </Link>
           <Link className='navbar__link2' to='/'>Вход</Link>
           <Link className='navbar__link3' to='/'>Регистрация</Link>
         </div>
       </div>
 
       <div className="nav">
-        {/* <FontAwesomeIcon icon={faUserGroup} /> */}
-        <h2 className='nav__h2'>Клуб <br />
-          Хозмаркет</h2>
+        <Link className='nav__h2'> <p className='nav__link1_p'><FontAwesomeIcon icon={faUserGroup} /></p> Клуб <p className='nav__link1_p2'>Хозмаркет</p> </Link>
       </div>
 
     </React.StrictMode>
