@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -17,7 +18,7 @@ const Footer = () => {
                 placeholder="Шуруповерт BOSCH"
               />
               <button type="submit" className="button__search icon icon-search">
-                <i></i>
+              <i class="fa-sharp fa-solid fa-file-signature"></i>
               </button>
             </form>
           </div>
@@ -76,7 +77,7 @@ const Footer = () => {
   );
   <div className="foter">
     <footer class="foter">
-      <p>© 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.</p>
+      <p> 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.</p>
     </footer>
   </div>;
 };

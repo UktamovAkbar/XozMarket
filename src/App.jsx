@@ -3,12 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <Routes>
-      <Route path="layout" element={<Layout />} />
-      <Route path="/" element={<Layout />} />
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }
