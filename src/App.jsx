@@ -11,11 +11,9 @@ function App() {
       <Route path="/footer" element={<Footer/>} />
       <Route path="/navbar" element={<Navbar/>} />
       <Route path="/kar" element={<Karusel/>}/>
-      
+      <Route path="/" element={<Home/>} />
     </Routes>
-    // <div className="">
-    //   <Footer/>
-    // </div>
+
   );
 }
 export default App;

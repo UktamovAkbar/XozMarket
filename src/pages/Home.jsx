@@ -6,7 +6,8 @@ const Home = () => {
   return (
     <>
     <div>
-    <Layout />
+    {/* <Layout /> */}
+    <h1>BOSHQAGA UTING</h1>
     </div>
     </>
   )
