@@ -5,9 +5,9 @@ import Layout from '../components/Layout'
 const Home = () => {
   return (
     <>
-    <Link to='/'>
+    <div>
     <Layout />
-    </Link>
+    </div>
     </>
   )
 }
