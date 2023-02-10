@@ -25,7 +25,7 @@ const Footer = () => {
             </form>
           </div>
           <div className="footer__logo_text">
-            <nobr>Интернет-магазин</nobr>
+            <div>Интернет-магазин</div>
             товаров для дома.
             <a href="#feedback" class="js-feedback-open">
               <i class="font-write"></i>
@@ -73,6 +73,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="footer-right">
+        <a href="tel:998(91)4422317" class="footer__tel">+998(91)4422317</a>
         </div>
       </div>
       <div className="foter">
