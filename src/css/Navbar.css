@@ -114,3 +114,16 @@ p{
     margin: 0px 1px;
     font-size: 10px;
 }
+
+.nav__h1 {
+    color: white;
+    padding: 10px 486px;
+    font-size: 38px;
+    font-family: 'Titan One', cursive;
+}
+
+.nav__img {
+    position: absolute;
+    margin: -67px 485px;
+    width: 200px;
+}

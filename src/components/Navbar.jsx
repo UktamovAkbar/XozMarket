@@ -15,7 +15,7 @@ const Navbar = () => {
           <option value="usa">Сасово</option>
         </select>
         <a className='navbar__a' href="tel: 8 (4912) 505-777"> 8 (4912) 505-777</a>
-        <div className="navbar__link">           
+        <div className="navbar__link">
           <Link className='navbar__link1' to='/'> <p><FontAwesomeIcon icon={faStar} /></p> Избранное </Link>
           <Link className='navbar__link2' to='/'>Вход</Link>
           <Link className='navbar__link3' to='/'>Регистрация</Link>
@@ -23,7 +23,9 @@ const Navbar = () => {
       </div>
 
       <div className="nav">
-        <Link className='nav__h2'> <p className='nav__link1_p'><FontAwesomeIcon icon={faUserGroup} /></p> Клуб <p className='nav__link1_p2'>Хозмаркет</p> </Link>
+        <Link className='nav__h2' to='/'> <p className='nav__link1_p'><FontAwesomeIcon icon={faUserGroup} /></p> Клуб <p className='nav__link1_p2'>Хозмаркет</p> </Link>
+        <h1 className='nav__h1'>хоз</h1>
+        <Link to='/'> <img src="/img/logo.png" alt="" className='nav__img' /> </Link>
       </div>
 
     </React.StrictMode>
