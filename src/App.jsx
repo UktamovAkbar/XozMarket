@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
@@ -8,11 +7,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Routes>
-      <Route path='layout' element={<Layout />} />
-      <Route path='/' element={<Navbar />} />
-
+      <Route path="layout" element={<Layout />} />
+      <Route path="/" element={<Layout />} />
     </Routes>
-  )
+  );
 }
-export default App
-
+export default App;
