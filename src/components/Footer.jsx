@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    // <div className="footer-fix">
-    //   <footer className="footer">
-    //     <img src="./logoxozm.png" alt="" width="150px" />
-    //     <input type="text" className="footer__search" />
-    //     <a href="tel:+998(91)44222317">+998(91)44222317</a>
-    //     <p className="footer__subtitle">Интернет-магазин товаров для дома.</p>
-    //   </footer>
-    // </div>
     <footer className="footer footer-fix">
       <div className="footer-inner">
         <div className="footer-left">
