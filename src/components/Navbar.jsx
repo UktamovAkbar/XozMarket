@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Navbar.css'
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserGroup, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faUserGroup, faStar, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
 
@@ -26,6 +26,8 @@ const Navbar = () => {
         <Link className='nav__h2' to='/'> <p className='nav__link1_p'><FontAwesomeIcon icon={faUserGroup} /></p> Клуб <p className='nav__link1_p2'>Хозмаркет</p> </Link>
         <h1 className='nav__h1'>хоз</h1>
         <Link to='/'> <img src="/img/logo.png" alt="" className='nav__img' /> </Link>
+        <input className='nav__input' type="text" placeholder='Шуруповерт BOSCH' /> 
+        <Link to='/'><FontAwesomeIcon icon={faMagnifyingGlass} /></Link>
       </div>
 
     </React.StrictMode>

@@ -127,3 +127,16 @@ p{
     margin: -67px 485px;
     width: 200px;
 }
+
+.nav__input {
+    width: 140px;
+    height: 25px;
+    position: absolute;
+    margin: -49px 780px;
+    background-color: #2C2F30;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+    font-size: 11px;
+    padding: 0 5px;
+}
