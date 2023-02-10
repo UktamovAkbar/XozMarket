@@ -82,6 +82,11 @@ const Footer = () => {
       </div>
     </footer>
   );
+  <div className="foter">
+    <footer class="foter">
+      <p>© 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.</p>
+    </footer>
+  </div>;
 };
 
 export default Footer;
