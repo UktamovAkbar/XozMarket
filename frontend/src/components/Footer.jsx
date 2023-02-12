@@ -3,14 +3,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Footer.css";
 
-
 const Footer = () => {
   return (
     <footer className="footer footer-fix">
       <div className="footer-inner">
         <div className="footer-left">
           <a href="" className="footer__logo">
-            <img src="https://xozm.ru/local/templates/main/img/svg/logo.svg" alt="" />
+            <img
+              src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
+              alt=""
+            />
           </a>
           <div className="footer__search">
             <form action="">
@@ -20,14 +22,14 @@ const Footer = () => {
                 placeholder="Шуруповерт BOSCH"
               />
               <button type="submit" className="button__search icon icon-search">
-                <i class="fa-sharp fa-solid fa-file-signature"></i>
+                <i class=""></i>
               </button>
             </form>
           </div>
           <div className="footer__logo_text">
-            <nobr>Интернет-магазин</nobr>
+            <div>Интернет-магазин</div>
             товаров для дома.
-            <a href="#feedback" class="js-feedback-open">
+            <a href="" class="">
               <i class="font-write"></i>
               Поделитесь мнением
             </a>
@@ -74,15 +76,24 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="footer-right">
+          <div class="footer__contact">
+            <a href="tel:+998914422317" class="footer__tel">
+              +998(91)442-23-17
+            </a>
+            <a href="" class="footer__address">
+              Bukhara - MONDAY_Labs
+            </a>
+          </div>
+        </div>
       </div>
       <div className="foter">
         <footer class="foter">
           <div>
-          © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.                
+            © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
           </div>
         </footer>
       </div>
-      
     </footer>
   );
 };
