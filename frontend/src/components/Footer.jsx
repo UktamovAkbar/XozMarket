@@ -1,21 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import "../css/Footer.css";
+
 
 const Footer = () => {
   return (
-    // <div className="footer-fix">
-    //   <footer className="footer">
-    //     <img src="./logoxozm.png" alt="" width="150px" />
-    //     <input type="text" className="footer__search" />
-    //     <a href="tel:+998(91)44222317">+998(91)44222317</a>
-    //     <p className="footer__subtitle">Интернет-магазин товаров для дома.</p>
-    //   </footer>
-    // </div>
     <footer className="footer footer-fix">
       <div className="footer-inner">
         <div className="footer-left">
           <a href="" className="footer__logo">
-            <img src="" alt="" />
+            <img src="https://xozm.ru/local/templates/main/img/svg/logo.svg" alt="" />
           </a>
           <div className="footer__search">
             <form action="">
@@ -25,7 +20,7 @@ const Footer = () => {
                 placeholder="Шуруповерт BOSCH"
               />
               <button type="submit" className="button__search icon icon-search">
-                <i></i>
+                <i class="fa-sharp fa-solid fa-file-signature"></i>
               </button>
             </form>
           </div>
@@ -80,6 +75,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="foter">
+        <footer class="foter">
+          <div>
+          © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.                
+          </div>
+        </footer>
+      </div>
+      
     </footer>
   );
 };
