@@ -6,19 +6,19 @@ import { faUserGroup, faStar, faMagnifyingGlass, faBasketShopping, } from "@fort
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function Navbar({product}) {
+function Navbar({ categories }) {
 
   const [product, setProduct] = useState([])
 
   useEffect(() => {
     axios.get(`http://localhost:1337/api/categories`)
-    .then((res) => console.log(res.data.data))
+      .then((res) => console.log(res.data.data))
 
     axios.get(`http://localhost:1337/api/products`)
-    .then((res) => console.log(res.data.data))
+      .then((res) => console.log(res.data.data))
   })
 
-  console.log(product.attributes.category.data.attributes.title);
+  // console.log(product.attributes.category.data.attributes.title);
 
   return (
     <React.StrictMode>
@@ -39,8 +39,7 @@ function Navbar({product}) {
 
         <div className="navbar__center">
           <Link className="navbar__center_link" to="/">
-            {" "}
-            <FontAwesomeIcon icon={faStar} /> Избранное{" "}
+            <FontAwesomeIcon icon={faStar} /> Избранное
           </Link>
 
           <div className="navbar__end">
