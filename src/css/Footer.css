@@ -55,3 +55,19 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
+.footer__links {
+  margin: 42px 0;
+  padding-top: 38px;
+  text-align: center;
+  position: relative;
+}
+.footer__inner {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1000px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}

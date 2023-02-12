@@ -3,14 +3,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../css/Footer.css";
 
-
 const Footer = () => {
   return (
     <footer className="footer footer-fix">
       <div className="footer-inner">
         <div className="footer-left">
           <a href="" className="footer__logo">
-            <img src="https://xozm.ru/local/templates/main/img/svg/logo.svg" alt="" />
+            <img
+              src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
+              alt=""
+            />
           </a>
           <div className="footer__search">
             <form action="">
@@ -75,17 +77,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-right">
-        <a href="tel:998(91)4422317" class="footer__tel">+998(91)4422317</a>
+          <a href="tel:998(91)4422317" class="footer__tel">
+            +998(91)4422317
+          </a>
         </div>
       </div>
       <div className="foter">
         <footer class="foter">
           <div>
-          © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.                
+            © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
           </div>
         </footer>
       </div>
-      
     </footer>
   );
 };
