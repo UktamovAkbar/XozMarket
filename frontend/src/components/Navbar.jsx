@@ -74,16 +74,11 @@ function Navbar() {
                 <li>корзина</li>
               </ul>
             </Link>
-
           </div>
-
         </div>
-
       </div>
 
-      <div className="bodd" >
-
-      </div>
+      
     </React.StrictMode>
   );
 }
