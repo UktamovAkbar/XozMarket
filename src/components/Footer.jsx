@@ -22,14 +22,14 @@ const Footer = () => {
                 placeholder="Шуруповерт BOSCH"
               />
               <button type="submit" className="button__search icon icon-search">
-                <i class="fa-sharp fa-solid fa-file-signature"></i>
+                <i class=""></i>
               </button>
             </form>
           </div>
           <div className="footer__logo_text">
             <div>Интернет-магазин</div>
             товаров для дома.
-            <a href="#feedback" class="js-feedback-open">
+            <a href="" class="">
               <i class="font-write"></i>
               Поделитесь мнением
             </a>
@@ -77,9 +77,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-right">
-          <a href="tel:998(91)4422317" class="footer__tel">
-            +998(91)4422317
-          </a>
+          <div class="footer__contact">
+            <a href="tel:+998914422317" class="footer__tel">
+              +998(91)442-23-17
+            </a>
+            <a href="" class="footer__address">
+              Bukhara - MONDAY_Labs
+            </a>
+          </div>
         </div>
       </div>
       <div className="foter">
