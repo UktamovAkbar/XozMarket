@@ -11,14 +11,18 @@ function Navbar({ categories }) {
   const [product, setProduct] = useState([])
 
   useEffect(() => {
-    axios.get(`http://localhost:1337/api/categories`)
-      .then((res) => console.log(res.data.data))
+    // axios.get(`http://localhost:1337/api/categories`)
+    //   .then((res) => console.log(res.data.data))
 
-    axios.get(`http://localhost:1337/api/products`)
-      .then((res) => console.log(res.data.data))
-  })
+    axios.get(`http://localhost:1337/api/products?populate=image`)
+      .then((res) => setProduct(res.data.data))
+  }, [])
 
-  // console.log(product.attributes.category.data.attributes.title);
+  useEffect(() => {
+    if (product && product[0]) {
+      console.log(product[0]);
+    }
+  }, [product])
 
   return (
     <React.StrictMode>
@@ -56,12 +60,14 @@ function Navbar({ categories }) {
       <div className="nav">
         <div className="navv">
           <div className="nav__start">
-            <Link to="/" className="nav__start_link">
-              <FontAwesomeIcon icon={faUserGroup} className='nav__start_link_icon' />
-              <ul className="nav__start_link_ul">
-                <li>Клуб</li>
-                <li>Хозмаркет</li>
-              </ul>
+            <Link to="/" >
+              <div className="nav__start_link">
+                <FontAwesomeIcon icon={faUserGroup} className='nav__start_link_icon' />
+                <ul className="nav__start_link_ul">
+                  <li>Клуб</li>
+                  <li>Хозмаркет</li>
+                </ul>
+              </div>
             </Link>
           </div>
 
@@ -79,15 +85,30 @@ function Navbar({ categories }) {
           </div>
 
           <div className="nav__end">
-            <Link className="nav__end_link" to='/'>
-              <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
+            <Link to='/'>
+              <div className="nav__end_link">
+                <FontAwesomeIcon icon={faBasketShopping} className='nav__end_link_icon' />
               <ul className="nav__end_link_ul">
                 <li>Ваша</li>
                 <li>корзина</li>
               </ul>
+              </div>
+              
             </Link>
           </div>
         </div>
+      </div>
+
+      <div>
+        {product && product.map(item => (
+          <div>
+
+            
+            <h1>{item.attributes.title}</h1>
+            <h1>{item.attributes.price}</h1>
+          <img src={`http://localhost:1337${item.attributes.image.data[0].attributes.url}`} width="100px" alt="" />
+          </div>
+        ))}
       </div>
 
     </React.StrictMode>
