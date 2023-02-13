@@ -8,23 +8,28 @@ const Footer = () => {
     <footer className="footer footer-fix">
       <div className="footer-inner">
         <div className="footer-left">
-          <a href="" className="footer__logo">
-            <img
-              src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
-              alt=""
-            />
-          </a>
-          <div className="footer__search">
-            <form action="">
-              <input
-                type="text"
-                className="input__search"
-                placeholder="Шуруповерт BOSCH"
+          <div className="footer-left__top">
+            <Link to="*" className="footer__logo">
+              <img
+                src="https://xozm.ru/local/templates/main/img/svg/logo.svg"
+                alt=""
               />
-              <button type="submit" className="button__search icon icon-search">
-                <i class=""></i>
-              </button>
-            </form>
+            </Link>
+            <div className="footer__search">
+              <form action="">
+                <input
+                  type="text"
+                  className="input__search"
+                  placeholder="Шуруповерт BOSCH"
+                />
+                <button
+                  type="submit"
+                  className="button__search icon icon-search"
+                >
+                  <i class=""></i>
+                </button>
+              </form>
+            </div>
           </div>
           <div className="footer__logo_text">
             <div>Интернет-магазин</div>
@@ -87,12 +92,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
       <div className="foter">
-        <footer class="foter">
-          <div>
-            © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
-          </div>
-        </footer>
+        <div className="">
+          © 2016-2023. Интернет-магазин ХозМаркет. Все права защищены.
+        </div>
       </div>
     </footer>
   );
