@@ -17,7 +17,7 @@
   margin-top: 18px;
 }
 .footer-fix {
-  position: absolute !important;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -31,7 +31,7 @@ footer {
   background-color: #363a3b;
   color: white;
   font-size: 12px;
-  border-top: 1px solid #3C3F40;
+  border-top: 1px solid #3c3f40;
 }
 .footer__logo_text {
   display: inline-block;
@@ -50,15 +50,11 @@ footer {
   vertical-align: top;
 }
 .footer_menu_links__ul {
-  float: left;
   padding-left: 0;
   list-style-type: none;
 }
 ul {
   display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
@@ -81,27 +77,24 @@ ul {
 }
 .footer__left {
   font-size: 0;
-  float: left;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding-right: 242px;
+  padding-right: 0px;
 }
 .input__search {
-  font-family:sans-serif;
-  line-height: 30px;
-  background: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 17px;
+
   color: #9b9b9b;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 14px;
+  font-family: sans-serif;
+  line-height: 30px;
+  background: none;
   border: 1px solid #cac8c7;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 17px;
-  float: left;
-  width: 100%ё;
+  width: 100%;
   margin: 0;
   max-height: 40px;
 }
@@ -113,19 +106,19 @@ ul {
   margin-right: 58px;
   margin-bottom: 25px;
 }
-.footer__right .footer__address {
+.footer__address {
   margin-bottom: 20px;
   display: block;
-  color: #ABACAB;
+  color: #abacab;
   text-decoration: none;
 }
-.footer__right .footer__tel {
-  display: block;
-  margin-bottom: 40px;
+.footer__tel {
   margin-top: 4px;
   position: relative;
-  color: #FAB900;
-  font-size: 32px;
+  color: #fab900;
+  font-size: 23px;
+  display: block;
+  margin-bottom: 40px;
 }
 .footer__right {
   float: right;
@@ -137,34 +130,38 @@ div {
   display: block;
 }
 .site_container {
+  height: 100%;
+  position: relative;
   margin: 0 auto;
   max-width: 100%;
   min-width: 320px;
-  height: 100%;
-  position: relative;
-  line-height: 1;
   font-family: sans-serif;
   color: #818181;
 }
-a{
+a {
   cursor: pointer;
   text-decoration: none;
 }
 .footer_menu_links__li a {
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 18px;
   display: block;
   margin-bottom: 4px;
   transition: all 0.3s;
 }
 .site_container {
-  margin: 0 auto;
-  max-width: 100%;
-  min-width: 320px;
   height: 100%;
   position: relative;
   line-height: 1;
   font-family: sans-serif;
   color: #818181;
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 320px;
+}
+.footer__social {
+  font-size: 0;
+  height: 26px;
+  margin-bottom: 24px;
 }
