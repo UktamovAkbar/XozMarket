@@ -1,0 +1,30 @@
+.footer {
+  background-color: #363a3b;
+  margin-top: 294px;
+  color: #fff;
+  position: relative;
+}
+.footer__padding {
+  padding: 15px 20px 15px 20px;
+  margin: 0 194px;
+}
+.footer_menu_links__ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.footer__input {
+  background: none;
+  color: #9b9b9b;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 14px;
+  width: 100%;
+  font-size: 17px;
+    
+}
+.input__search{
+  width: 400px;
+  height: ;
+}
