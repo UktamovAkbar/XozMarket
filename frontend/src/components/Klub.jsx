@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Menu from "./Menu";
 
 const Klub = () => {
   return (
-    <div>Klub</div>
-  )
-}
+    <div>
+      <Navbar />
+      <Menu />
+      <div className="">
+        
+      </div>
 
-export default Klub
+      <Footer />
+    </div>
+  );
+};
+
+export default Klub;
